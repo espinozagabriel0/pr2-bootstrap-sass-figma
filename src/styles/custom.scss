@@ -1,0 +1,63 @@
+$green: #285E67;
+$grey: #D0D0D0;
+$fontSize: 21.33px;
+
+body{
+    background-color: white;
+}
+nav{
+    span.logoText{
+       color: $green;
+       font-size: 1.5rem;
+    }
+    span.logoIcon{
+        display: block;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background-color: $grey;
+    }
+}
+
+.hero-section{
+    .btnJoin{
+        background-color: $green;
+        padding: 16px;
+        width: 251px;
+        height: 56px;
+        font-size: $fontSize;
+    }
+    img.imgHero{
+        border-radius: 16px;
+        width: 626px;
+        height: 390px;
+    }
+}
+
+.section1{
+    border-radius: 12px;
+
+    .section1-icon{
+        background-color: $green;
+        width: 58px;
+        height: 57px;
+        border-radius: 9px;
+        cursor: pointer;
+        padding: 14px;
+
+        img{
+            width: 26px;
+            height: 26px;
+        }
+    }
+}
+
+.section-organic{
+    img:not(.organic-flower){
+        border-radius: 12px;
+    }
+    img.organic-flower{
+        width: 52px;
+        height: 52px;
+    }
+}

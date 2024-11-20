@@ -1,0 +1,52 @@
+body {
+  background-color: white;
+}
+
+nav span.logoText {
+  color: #285E67;
+  font-size: 1.5rem;
+}
+nav span.logoIcon {
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #D0D0D0;
+}
+
+.hero-section .btnJoin {
+  background-color: #285E67;
+  padding: 16px;
+  width: 251px;
+  height: 56px;
+  font-size: 21.33px;
+}
+.hero-section img.imgHero {
+  border-radius: 16px;
+  width: 626px;
+  height: 390px;
+}
+
+.section1 {
+  border-radius: 12px;
+}
+.section1 .section1-icon {
+  background-color: #285E67;
+  width: 58px;
+  height: 57px;
+  border-radius: 9px;
+  cursor: pointer;
+  padding: 14px;
+}
+.section1 .section1-icon img {
+  width: 26px;
+  height: 26px;
+}
+
+.section-organic img:not(.organic-flower) {
+  border-radius: 12px;
+}
+.section-organic img.organic-flower {
+  width: 52px;
+  height: 52px;
+}/*# sourceMappingURL=custom.css.map */
