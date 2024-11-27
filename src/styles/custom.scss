@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 $green: #285E67;
 $grey: #D0D0D0;
 $fontSize: 21.33px;
+$secondary: #2B2B2B;
+$peach: #EBBFAE;
 
 body{
     background-color: white;
+    font-family: "Poppins", sans-serif;
 }
 nav{
     span.logoText{
@@ -37,6 +42,10 @@ nav{
 .section1{
     border-radius: 12px;
 
+    h2{
+        color: $secondary;
+    }
+
     .section1-icon{
         background-color: $green;
         width: 58px;
@@ -59,5 +68,27 @@ nav{
     img.organic-flower{
         width: 52px;
         height: 52px;
+    }
+    h2#organic-title{
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 62px;
+        color: $secondary;
+    }
+}
+
+.section-you-are-what-you-eat{
+    border-radius: 9px;
+    img.cocktail{
+        height: 347.5px;
+        width: 350px;
+    }
+    .section{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    img.hoja{
+        width: 58px;   
+        height: 57px;
     }
 }
