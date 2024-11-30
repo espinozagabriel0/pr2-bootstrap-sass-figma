@@ -8,21 +8,25 @@ $peach: #EBBFAE;
 $lightPeach: #FCE2D7;
 $lightGray: #F4F4F4;
 
+$ipad: 1024px;
+$mobile: 430px;
+
 body{
     background-color: white;
     font-family: "Poppins", sans-serif;
 }
+span.logoIcon{
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: $grey;
+}
+
 nav{
     span.logoText{
        color: $green;
        font-size: 1.5rem;
-    }
-    span.logoIcon{
-        display: block;
-        width: 26px;
-        height: 26px;
-        border-radius: 50%;
-        background-color: $grey;
     }
 }
 
@@ -46,6 +50,7 @@ nav{
 
     h2{
         color: $secondary;
+        font-size: 50px;
     }
 
     .section1-icon{
@@ -61,6 +66,20 @@ nav{
             height: 26px;
         }
     }
+
+    .section1-illustration{
+        width: 291px;
+        top: 3rem;
+    }
+    @media screen and (max-width: $ipad){
+        .section1-illustration{
+            display: none;
+        }
+        h2{
+            text-align: center;
+        }
+    }
+
 }
 
 .section-organic{
@@ -131,5 +150,16 @@ nav{
         img{
             width: 82px;
         }
+    }
+}
+
+footer{
+    background-color: $green;
+    color: $lightGray;
+    padding: 78px 139px;
+    font-size: 16px;
+    
+    ul{
+        list-style-type: none;
     }
 }
