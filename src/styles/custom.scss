@@ -5,6 +5,8 @@ $grey: #D0D0D0;
 $fontSize: 21.33px;
 $secondary: #2B2B2B;
 $peach: #EBBFAE;
+$lightPeach: #FCE2D7;
+$lightGray: #F4F4F4;
 
 body{
     background-color: white;
@@ -90,5 +92,44 @@ nav{
     img.hoja{
         width: 58px;   
         height: 57px;
+    }
+}
+.section-cta{
+    .plant-protective-bg{
+        background: url('/img/cta-sectionBg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 667px;
+        border-radius: 12px;
+
+        .bg-text{
+            max-width: 650px;
+            color: $lightGray;
+            margin-bottom: 5rem;
+
+            img{
+                width: 82px;
+            }
+            .btnJoin{
+                padding: 16px;
+                width: 251px;
+                height: 56px;
+                font-size: $fontSize;
+                border-color: $lightGray;
+            }
+        }
+    }
+    .plant-protective{
+        background-color: $lightPeach;
+        max-width: 1165px;
+        max-height: 356px;
+        bottom: 12rem;
+        border-radius: 12px;
+        padding: 119px 66px;
+
+        img{
+            width: 82px;
+        }
     }
 }
