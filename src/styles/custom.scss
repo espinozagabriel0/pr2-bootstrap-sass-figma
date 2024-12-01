@@ -78,11 +78,16 @@ nav{
         h2{
             text-align: center;
         }
+        .section1-icon-container{
+            align-items: center;
+            text-align: center;
+        }
     }
 
 }
 
 .section-organic{
+    color: $secondary;
     img:not(.organic-flower){
         border-radius: 12px;
     }
@@ -95,22 +100,43 @@ nav{
         font-weight: 600;
         line-height: 62px;
         color: $secondary;
+
+    }
+    .organic-list{
+        @media screen and (max-width: $ipad){
+            color: $green;    
+        }
+    }
+
+    @media screen and (max-width: $mobile){
+        text-align: center;
     }
 }
 
 .section-you-are-what-you-eat{
     border-radius: 9px;
+    padding: 56px 116px;
+
+    h2{
+        font-size: 50px;
+    }
     img.cocktail{
         height: 347.5px;
         width: 350px;
-    }
-    .section{
-        max-width: 80%;
-        margin: 0 auto;
+     
     }
     img.hoja{
         width: 58px;   
         height: 57px;
+    }
+    @media screen and (max-width: $ipad){
+        .imgContainer{
+            display: none;
+        }
+        text-align: center;
+        .cocktail-icon img{
+            margin: 0 auto;
+        }
     }
 }
 .section-cta{
