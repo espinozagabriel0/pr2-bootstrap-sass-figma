@@ -133,6 +133,8 @@ nav{
         .imgContainer{
             display: none;
         }
+        padding: 0;
+        
         text-align: center;
         .cocktail-icon img{
             margin: 0 auto;
@@ -152,6 +154,7 @@ nav{
             max-width: 650px;
             color: $lightGray;
             margin-bottom: 5rem;
+            text-align: center;
 
             img{
                 width: 82px;
@@ -163,18 +166,26 @@ nav{
                 font-size: $fontSize;
                 border-color: $lightGray;
             }
+
+            p{
+                @media screen and (max-width: $mobile){
+                    display: none;
+                }
+            }
         }
     }
     .plant-protective{
         background-color: $lightPeach;
-        max-width: 1165px;
+        // max-width: 1165px;
+        width: 90%;
         max-height: 356px;
         bottom: 12rem;
         border-radius: 12px;
         padding: 119px 66px;
 
         img{
-            width: 82px;
+            max-width: 82px;
+            width: 9vw;
         }
     }
 }
@@ -185,7 +196,16 @@ footer{
     padding: 78px 139px;
     font-size: 16px;
     
+    .footer-menu{
+        @media screen and (max-width: $ipad){
+            flex-direction: column; 
+            & > *{
+                width: 100%;
+            }
+        }
+    }
     ul{
         list-style-type: none;
+        padding: 0;
     }
 }
