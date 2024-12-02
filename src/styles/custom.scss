@@ -31,6 +31,12 @@ nav{
 }
 
 .hero-section{
+    h1{
+        font-size: 65px;
+        @media screen and (max-width: $ipad){
+            font-size:8vw;
+        }
+    }
     .btnJoin{
         background-color: $green;
         padding: 16px;
@@ -133,8 +139,7 @@ nav{
         .imgContainer{
             display: none;
         }
-        padding: 0;
-        
+        padding: 56px 1rem;
         text-align: center;
         .cocktail-icon img{
             margin: 0 auto;
